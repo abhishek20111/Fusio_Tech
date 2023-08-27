@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ErrorPage from "./component/ErrorPage";
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
-       <Helmet>
+      <Helmet>
         <title>FusioTech</title>
         <meta name="description" content="Fusiotech is platform for Courses" />
         <meta name="keywords" content="FusioTech, Fusiotech, Education, Learning platform, course, buy courses, courses" />

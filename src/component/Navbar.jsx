@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../App.css";
+
 import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import GIF from "../assets/Navbar.jpg";
 import { useSelector } from "react-redux";
@@ -28,7 +28,7 @@ function Navbar() {
   const CURRENT_USER_TYPE = useSelector((state) => state.userData.role);
   console.log(CURRENT_USER_TYPE);
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link link to="/" className="flex items-center">
           <img
@@ -53,7 +53,7 @@ function Navbar() {
           </Link>
           {/* <button
             type="button"
-            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 darksssfocus:ring-gray-600"
             id="user-menu-button"
             aria-expanded="false"
             data-dropdown-toggle="user-dropdown"
@@ -67,17 +67,17 @@ function Navbar() {
             />
           </button> */}
           {/* <div
-            className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+            className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow darksssbg-gray-700 darksssdivide-gray-600"
             id="user-dropdown"
           >
             {isLogin ? (
               <div className="w-fit">
                 <div className="px-4 py-3">
                   {console.log(userInfo.name)}
-                  <span className="block font-bold  text-md text-gray-900 dark:text-white">
+                  <span className="block font-bold  text-md text-gray-900 darkssstext-white">
                     {userInfo.name}
                   </span>
-                  <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
+                  <span className="block text-sm font-medium text-gray-500 truncate darkssstext-gray-400">
                     {userInfo.email}
                   </span>
                 </div>
@@ -85,7 +85,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/UserProfile"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 darkssshover:bg-gray-600 darkssstext-gray-200 darkssshover:text-white"
                     >
                       Dashboard
                     </Link>
@@ -93,7 +93,7 @@ function Navbar() {
                   {/* <li>
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 darkssshover:bg-gray-600 darkssstext-gray-200 darkssshover:text-white"
                     >
                       Settings
                     </a>
@@ -101,7 +101,7 @@ function Navbar() {
                   <li>
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 darkssshover:bg-gray-600 darkssstext-gray-200 darkssshover:text-white"
                     >
                       Earnings
                     </a>
@@ -111,7 +111,7 @@ function Navbar() {
                         onClick={() => {
                           navigate("/logout");
                         }}
-                        className="block cursor-pointer px-4 py-2 text-sm  hover:rounded hover:bg-blue-500 hover:text-lg transition-all hover:text-white text-gray-700  dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        className="block cursor-pointer px-4 py-2 text-sm  hover:rounded hover:bg-blue-500 hover:text-lg transition-all hover:text-white text-gray-700  darkssshover:bg-gray-600 darkssstext-gray-200 darkssshover:text-white"
                       >
                         Sign out
                       </div>
@@ -136,7 +136,7 @@ function Navbar() {
           {/* <button
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 darkssstext-gray-400 darkssshover:bg-gray-700 darksssfocus:ring-gray-600"
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
@@ -161,13 +161,13 @@ function Navbar() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white darksssbg-gray-800 md:darksssbg-gray-900 darksssborder-gray-700">
             <li>
               <a
                 href="#"
                 className={`block py-2 pl-3 pr-4  rounded md:bg-transparent ${
                   location.pathname === "/" ? "text-blue-700" : "text-gray-700"
-                } md:p-0 dark:text-white hover:text-blue-700`}
+                } md:p-0 darkssstext-white hover:text-blue-700`}
                 aria-current="page"
               >
                 <Link to="/">Home</Link>
@@ -178,7 +178,7 @@ function Navbar() {
                 href="#"
                 className={`block py-2 pl-3 pr-4  rounded md:bg-transparent ${
                   location.pathname === "/courses" ? "text-blue-700" : "text-gray-700"
-                } md:p-0 dark:text-white hover:text-blue-700`}
+                } md:p-0 darkssstext-white hover:text-blue-700`}
               >
                 <Link to="/courses">Courses</Link>
               </a>
@@ -189,7 +189,7 @@ function Navbar() {
                   to="/myCourse"
                   className={`block py-2 pl-3 pr-4  rounded md:bg-transparent ${
                     location.pathname === "/myCourse" ? "text-blue-700" : "text-gray-700"
-                  } md:p-0 dark:text-white hover:text-blue-700`}
+                  } md:p-0 darkssstext-white hover:text-blue-700`}
                 >
                   My Courses
                 </Link>
@@ -202,7 +202,7 @@ function Navbar() {
                   to="/manage"
                   className={`block py-2 pl-3 pr-4  rounded md:bg-transparent ${
                     location.pathname === "/manage" ? "text-blue-700" : "text-gray-700"
-                  } md:p-0 dark:text-white hover:text-blue-700`}
+                  } md:p-0 darkssstext-white hover:text-blue-700`}
                 >
                   Manage
                 </Link>
@@ -215,7 +215,7 @@ function Navbar() {
                   location.pathname === "/intern"
                     ? "text-blue-700"
                     : "text-gray-700"
-                } md:p-0 dark:text-white hover:text-blue-700`}
+                } md:p-0 darkssstext-white hover:text-blue-700`}
               >
                 Internships
               </Link>
@@ -228,7 +228,7 @@ function Navbar() {
                   location.pathname === "/about"
                     ? "text-blue-700"
                     : "text-gray-700"
-                } md:p-0 dark:text-white hover:text-blue-700`}
+                } md:p-0 darkssstext-white hover:text-blue-700`}
               >
                 About Us
               </Link>

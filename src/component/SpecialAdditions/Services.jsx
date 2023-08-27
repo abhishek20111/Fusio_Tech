@@ -9,7 +9,7 @@ import p5 from "../../assets/5.png";
 function Services() {
   return (
     <div className="w-full flex-col flex items-center md:my-16 my-10">
-      {/* <Zoom> */}
+      <Zoom>
         <div className="w-full flex flex-col items-center bg-white rounded-lg  md:flex-row ">
           <div className="md:w-1/2 flex justify-center">
             <img
@@ -35,8 +35,8 @@ function Services() {
             </p>
           </div>
         </div>
-      {/* </Zoom> */}
-      <>
+      </Zoom>
+      <Zoom>
         <div className=" flex flex-col-reverse  items-center bg-white  w-full rounded-lg  md:flex-row ">
           <div className="flex md:w-1/2 flex-col justify-center p-4 leading-normal text-center">
             <div className="flex flex-col items-center w-11/12">
@@ -63,8 +63,8 @@ function Services() {
             />
           </div>
         </div>
-      </>
-      <>
+      </Zoom>
+      <Zoom>
         <div className=" flex flex-col items-center bg-white  w-full rounded-lg  md:flex-row ">
           <div className="md:w-1/2 flex justify-center">
             <img
@@ -87,8 +87,8 @@ function Services() {
             </p>
           </div>
         </div>
-      </>
-      <>
+      </Zoom>
+      <Zoom>
         <div className=" flex flex-col-reverse  items-center bg-white  w-full rounded-lg  md:flex-row ">
           <div className="flex md:w-1/2 flex-col justify-center p-4 leading-normal">
             <div className="flex flex-col items-center w-11/12 text-center">
@@ -114,8 +114,8 @@ function Services() {
             />
           </div>
         </div>
-      </>
-      <>
+      </Zoom>
+      <Zoom>
         <div className=" flex flex-col items-center bg-white  w-full rounded-lg  md:flex-row ">
           <div className="md:w-1/2 flex justify-center">
             <img
@@ -139,7 +139,7 @@ function Services() {
             </p>
           </div>
         </div>
-      </>
+      </Zoom>
     </div>
   );
 }

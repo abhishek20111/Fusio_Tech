@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GIF from "../assets/pic_1.avif";
+import GITTT from "../assets/pic_1.avif";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Fade } from "react-awesome-reveal";
@@ -91,7 +91,7 @@ export default function LandingPage() {
           <div className="flex-1 mx-auto mt-10 xl:mt-0 ">
             <div className="relative z-0 hidden sm:flex rounded-tl-3xl ">
               <img
-                src={GIF}
+                src={GITTT}
                 className="w-[600px] rounded-tl-3xl rounded-br-3xl "
                 alt=""
               />

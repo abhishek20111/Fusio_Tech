@@ -23,7 +23,7 @@ const SlideContainer = () => {
   }, []);
 
   return (
-    <div className="slide-container" style={styles.slideContainer}>
+    <div className="slide-container md:w-[80%] flex justify-center" style={styles.slideContainer}>
       <div className="wrapper">
         <div className="clash-card barbarian" style={styles.clashCard}>
           <div className="clash-card__image clash-card__image--barbarian" style={styles.barbarianImage}>
